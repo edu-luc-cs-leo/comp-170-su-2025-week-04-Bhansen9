@@ -56,7 +56,15 @@ def intersect(foo: list[str], bar: list[str]) -> bool:
 
 
 
-"""      """
+"""  Looking at the solution and at my answer I can see some difference although my functions did do the job. 
+I think the biggest take away is that I need to do a better job with type hints at the start of my function as I do not do it here in my function. 
+The second thing is the labeling portions of my function. I think I'm definitely understanding the concepts in these homework assessments but I need to 
+start including more time into the naming of my functions. I think my math part in the Diamond function was a little off as it does not include nearly as much as 
+the solution does. I kind of came up with this formula on my own using the height of the Diamond as a key indicator on how the middle of the Diamond needs to be and 
+going from there. I then was able to piece together the portions of the top and middle of both ends of the diamond using ratios and math that would compound on each other 
+to assemble the symbols needed for each level. The right triangle I think I did a very good job on however I did not see that we had to do both sides facing left and right.
+ The compound interest I feel as though I definitely got it. And the hollow square I feel like I got just not in the way that is shown in the solutions. Same as the diamond 
+ I used my own formulas and just used the ratios to determine the amount of symbols and spaces needed for each level.   """
 
 
 
