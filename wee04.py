@@ -1,5 +1,74 @@
 
 
+
+
+
+
+def longest_word(words: list[str]) -> str:
+    if words is not None and len(words) > 0:
+        Word_Answer_LW = ""
+        for word in words:
+            if len(word) > len(Word_Answer_LW):
+                Word_Answer_LW = word
+        return Word_Answer_LW
+    
+
+
+def shortest_word(words: list[str]) -> str:
+    Word_Answer_SW = None
+    if words is not None and len(words) > 0:
+        Word_Answer_SW = words[0]
+        for word in words:
+         if len(word) < len(Word_Answer_SW):
+             Word_Answer_SW = word
+    return Word_Answer_SW
+
+
+def odd_words(words: list[str]) -> list[str]:
+  list_of_odds = None
+  if words is not None and len(words) > 0:
+     list_of_odds = []
+     for word in words:
+        if (len(word) % 2 ) == 1:
+          list_of_odds.append(word)
+  return list_of_odds
+
+
+def average_words(words: list[str]) -> list[str]:
+  resulting_words = None
+  if words is not None and len(words) > 0:
+    resulting_words = []
+    for word in words:
+      avg_len = len(word) / len(words)
+      difference = (len(word) - avg_len)
+      if difference < 1:
+        resulting_words.append(word)
+  return resulting_words
+
+
+def intersect(foo: list[str], bar: list[str]) -> bool:
+  resulting_intersection = False
+  if foo is not None and bar is not None and len(foo) > 0 and len(bar) > 0:
+    for word in foo:
+      if word in bar:
+        resulting_intersection = True
+  return resulting_intersection
+
+
+
+"""      """
+
+
+
+
+
+
+
+
+
+
+
+
 #--------------------------------------------------------------------------------#
 # ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎  WRITE YOUR CODE ABOVE THIS  LINE ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎
 
